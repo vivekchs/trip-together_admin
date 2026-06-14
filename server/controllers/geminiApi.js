@@ -140,7 +140,7 @@ const callGeminiApi = async prompt => {
       response.data.candidates[0].content.parts[0].text
     ) {
       const jsonStringOutput = response.data.candidates[0].content.parts[0].text;
-      console.log('GEMINI RESPONSE', jsonStringOutput);
+      console.log('GEMINI RESPONSE received');
       try {
         const parsedJson = JSON.parse(jsonStringOutput);
         return parsedJson;

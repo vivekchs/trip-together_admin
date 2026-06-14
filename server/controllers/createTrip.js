@@ -87,7 +87,7 @@ async function createTrip(req, res) {
     await session.commitTransaction();
     session.endSession();
     try {
-      await sendGuideAndUserEmails({
+       sendGuideAndUserEmails({
         location: `${tripData?.location?.city} , ${tripData?.location?.state}`,
         guideEmail: selectedGuide.email,
         userEmails: userEmails,
