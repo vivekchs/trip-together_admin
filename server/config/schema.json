@@ -1,0 +1,318 @@
+{
+  "dataBaseApis": {
+    "getAllGuides": {
+      "schema": {
+        "url": "/dbApis/getAllGuides",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "addTripToUser": {
+      "schema": {
+        "url": "/dbApis/addTripToUser",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "createTrip": {
+      "schema": {
+        "url": "/dbApis/createTrip",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getTripsForUser": {
+      "schema": {
+        "url": "/dbApis/getTripsForUser",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getUsersForTrip": {
+      "schema": {
+        "url": "/dbApis/getUsersForTrip",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getTripsFromDB": {
+      "schema": {
+        "url": "/dbApis/getTripsFromDB",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getTripsForGuide": {
+      "schema": {
+        "url": "/dbApis/getTripsForGuide",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getTripDetails": {
+      "schema": {
+        "url": "/dbApis/getTripDetails",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "userLogin": {
+      "schema": {
+        "url": "/api/userLogin",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "password"]
+        }
+      }
+    },
+    "userSignup": {
+      "schema": {
+        "url": "/api/userSignup",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "password"]
+        }
+      }
+    },
+    "guideLogin": {
+      "schema": {
+        "url": "/api/guideLogin",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "password"]
+        }
+      }
+    },
+    "guideSignup": {
+      "schema": {
+        "url": "/api/guideSignup",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "password", "name", "phoneNumber"]
+        }
+      }
+    },
+    "registerAsGuide": {
+      "schema": {
+        "url": "/api/registerAsGuide",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "experience": {
+              "type": "string"
+            },
+            "rating": {
+              "type": "string"
+            },
+            "specialization": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "bio": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "name", "experience", "specialization"]
+        }
+      }
+    },
+    "updateGuideProfile": {
+      "schema": {
+        "url": "/api/updateGuideProfile",
+        "body": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "phoneNumber": { "type": "string" },
+            "experience": { "type": "string" },
+            "rating": { "type": "string" },
+            "specialization": { "type": "string" },
+            "image": { "type": "string" },
+            "bio": { "type": "string" },
+            "password": { "type": "string" }
+          },
+          "required": []
+        }
+      }
+    },
+    "adminLogin": {
+      "schema": {
+        "url": "/api/adminLogin",
+        "body": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "required": ["email", "password"]
+        }
+      }
+    },
+    "getPendingGuides": {
+      "schema": {
+        "url": "/api/admin/getPendingGuides",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "approveGuide": {
+      "schema": {
+        "url": "/api/admin/approveGuide",
+        "body": {
+          "type": "object",
+          "properties": {
+            "guideId": {
+              "type": "string"
+            },
+            "approve": {
+              "type": "boolean"
+            }
+          },
+          "required": ["guideId"]
+        }
+      }
+    },
+    "adminGetAllGuides": {
+      "schema": {
+        "url": "/api/admin/guides",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "adminGetAllTrips": {
+      "schema": {
+        "url": "/api/admin/trips",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getTripsByCategory": {
+      "schema": {
+        "url": "/api/getTripsByCategory",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": ["category"]
+        }
+      }
+    }
+  },
+  "externalApis": {
+    "getMostVisitedPlaces": {
+      "schema": {
+        "url": "/ext/getMostVisitedPlaces",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "geminiApi": {
+      "schema": {
+        "url": "/ext/geminiApi",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "getImageFromText": {
+      "schema": {
+        "url": "/ext/getImageFromText",
+        "body": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    }
+  }
+}

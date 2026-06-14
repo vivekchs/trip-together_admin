@@ -1,0 +1,75 @@
+.guide-settings-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.settings-form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+.settings-form input,
+.settings-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.35rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+.actions { margin-top: 1rem; text-align: right; }
+.submit-btn { background: #2563eb; color: #fff; padding: 0.6rem 1rem; border-radius: 6px; border: none; cursor: pointer; }
+
+/* Enhanced layout */
+.guide-settings-container {
+  padding: 2.25rem;
+  border-radius: 12px;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.settings-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#a7b1ff,#d7dcff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  box-shadow: 0 8px 20px rgba(167,177,255,0.3);
+}
+
+.settings-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.status-badge {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #065f46;
+  background: #d1fae5;
+}
+
+@media (min-width: 768px) {
+  .settings-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .settings-form .actions { grid-column: 1 / -1; }
+}

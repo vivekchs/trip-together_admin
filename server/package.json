@@ -1,0 +1,33 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "prettier --write . && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/multipart": "^9.0.3",
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.10.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.0",
+    "fastify": "^5.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.4",
+    "nodemailer": "^7.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
