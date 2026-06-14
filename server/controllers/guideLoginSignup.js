@@ -18,7 +18,7 @@ const guideSignup = async (req, reply) => {
       email,
       password: hashedPassword,
       phone: phoneNumber,
-      isApproved: "not approved", // default to not approved
+      isApproved: false, // default to not approved
     });
 
     await newGuide.save();
